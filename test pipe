@@ -13,17 +13,17 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-                sh 'ssh root@20.121.212.54 \'hostname\''
+                sh 'ssh root@ub2verchov.eastus.cloudapp.azure.com \'hostname\''
             }
         }
         stage("Second step") {
             steps {
-                sh 'ssh root@20.121.212.54 \'uptime\''
+                sh 'ssh root@ub2verchov.eastus.cloudapp.azure.com \'uptime\''
             }
         }
         stage("Third step") {
             steps {
-                sh 'ssh root@20.121.212.54 \'logname\''
+                sh 'ssh root@ub2verchov.eastus.cloudapp.azure.com \'logname\''
             }
         }
     }
