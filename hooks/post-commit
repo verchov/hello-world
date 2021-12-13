@@ -6,4 +6,4 @@ UUID=`svnlook uuid $REPOS`
   --post-data "`svnlook changed --revision $REV $REPOS`" \
   --output-document "-" \
   --timeout=2 \
-  http://server/subversion/${UUID}/notifyCommit?rev=$REV
+  http://server/hello-world/${UUID}/notifyCommit
