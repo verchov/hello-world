@@ -21,9 +21,9 @@ pipeline {
                 sh 'ssh root@ub2verchov.eastus.cloudapp.azure.com \'uptime\''
             }
         }
-        stage("Second step") {
+        stage("Third step") {
             steps {
-                sh 'ssh root@ub2verchov.eastus.cloudapp.azure.com \'uptime\''
+                sh 'ssh root@ub2verchov.eastus.cloudapp.azure.com \'logname\''
             }
         }    
     }
