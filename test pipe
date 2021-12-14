@@ -26,10 +26,5 @@ pipeline {
                 sh 'ssh root@ub2verchov.eastus.cloudapp.azure.com \'logname\''
             }
         }
-        stage("Fouth step") {
-            steps {
-                sh 'ssh root@ub2verchov.eastus.cloudapp.azure.com \'groups\''
-            }
-        }
     }
 }
